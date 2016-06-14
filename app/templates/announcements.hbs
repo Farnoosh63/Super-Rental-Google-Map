@@ -1,0 +1,13 @@
+<h2>Announcements</h2>
+
+{{#each model as |announcement|}}
+  <h3>{{announcement.title}}</h3>
+  <h4>{{announcement.info}}</h4>
+  <button {{action 'delete' announcement}}>Delete</button>
+{{/each}}
+
+<br>
+<br>
+
+{{new-announcement save="save"}}
+{{#link-to 'index'}}Home{{/link-to}}

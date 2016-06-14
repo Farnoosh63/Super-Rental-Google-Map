@@ -1,0 +1,13 @@
+.new-announcement {
+  display:inline-block;;
+  text-align: right;
+}
+
+.new-rental {
+  display:inline-block;;
+  text-align: right;
+}
+.map-display {
+    height: 600px;
+    width: 600px;
+  }

@@ -1,0 +1,16 @@
+
+<h2> Available Rentals in {{city.name}}</h2>
+
+{{#if city.rentals}}
+  <ul>
+    {{#each city.rentals as |rental|}}
+       {{rental-tile rental=rental}}
+    {{/each}}
+  </ul>
+{{else}}
+  <p>There is no rental available at this time</p>
+{{/if}}
+
+
+
+{{#link-to 'index'}}home{{/link-to}}
